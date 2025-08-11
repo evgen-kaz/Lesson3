@@ -36,10 +36,10 @@ public class Lesson3 {
         $("#hobbiesWrapper").$(byText("Reading")).click();
         $("#uploadPicture").uploadFromClasspath("cat.jfif");
         $("#currentAddress").setValue(address);
-        $(byText("Select State")).click();
-        $(byText("Rajasthan")).click();
-        $(byText("Select City")).click();
-        $(byText("Jaipur")).click();
+        $("#state").click();
+        $("#stateCity-wrapper").$(byText("Rajasthan")).click();
+        $("#city").click();
+        $("#stateCity-wrapper").$(byText("Jaipur")).click();
         $("#submit").click();
         $(".modal-content").shouldHave(text("Thanks for submitting the form"));
 
